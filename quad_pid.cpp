@@ -199,7 +199,7 @@ void obsCallback(const geometry_msgs::Pose2D::ConstPtr& msg)
 void quadCallback(const nav_msgs::Odometry::ConstPtr& msg)
 {
   current_x = msg->pose.pose.position.x;
- current_y = msg->pose.pose.position.y;
+  current_y = msg->pose.pose.position.y;
   quadpose.pose.pose.position.z = msg->pose.pose.position.z;
   return;
 }
